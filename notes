@@ -1,0 +1,27 @@
+gipo, pin#, where it connects
+
+GPIO2	3	I2C SDA (optional future use)	Optional for expander later
+GPIO3	5	I2C SCL (optional future use)	
+GPIO4	7	Toggle Switch 1	
+GPIO17	11	Toggle Switch 2	
+GPIO27	13	PMW3360 CS	SPI Chip Select
+GPIO10	19	PMW3360 MOSI	SPI
+GPIO9	21	PMW3360 MISO	SPI
+GPIO11	23	PMW3360 SCLK	SPI
+GPIO22	15	PMW3360 MOTION	Optional (interrupt)
+GPIO5	29	Matrix Column 1 (shared)	
+GPIO6	31	Matrix Column 2 (shared)	
+GPIO13	33	Matrix Column 3 (shared)	
+GPIO19	35	Matrix Column 4 (shared)	
+GPIO26	37	Matrix Row 1 (Grid 1)	
+GPIO18	12	Matrix Row 2 (Grid 1)	
+GPIO23	16	Matrix Row 3 (Grid 1)	
+GPIO24	18	Matrix Row 4 (Grid 1)	
+GPIO25	22	Matrix Row 5 (Grid 1)	
+GPIO8	24	Matrix Row 6 (Grid 1)	
+GPIO7	26	Matrix Row 1 (Grid 2)	
+GPIO12	32	Matrix Row 2 (Grid 2)	
+GPIO16	36	Matrix Row 3 (Grid 2)	
+GPIO20	38	Matrix Row 4 (Grid 2)	
+GPIO21	40	Matrix Row 5 (Grid 2)	
+GPIO14	8	Matrix Row 6 (Grid 2)	
