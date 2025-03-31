@@ -1,3 +1,6 @@
+gipo pinout for pi zero 1 directly to matrix rows. needs updated
+
+
 gipo, pin#, where it connects
 
 GPIO2	3	I2C SDA (optional future use)	Optional for expander later

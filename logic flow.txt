@@ -1,0 +1,58 @@
+main
+    key matrix connected to 6502
+
+    6502 scans matrix and sends off to pi zero w
+
+    pi zero w runs python to send keypresses off to either bluetooth or local based on Toggle
+
+    pi zero interfaces with ram to reprogram 6502
+
+------------------------------
+
+
+
+key matrix:
+    6x12 (keyboard) + 6x4 (10 key)
+
+6502
+    ram chip for programming
+    rom chip for base firmware?
+    chip to send data to pi?
+    timer circuit
+    reset switches
+
+pi zero w
+    power off circuit
+        toggle sends shutdown command to pi
+        toggle cuts main power, capacitor keeps power to pi for 10 seconds
+    interface to control ram chip and reprogram
+    interface for 8x gipo pins to send out to breadboard (cat5 connector on the outside of keyboard)
+
+
+power source
+    either usb wall ac, or usb battery
+    circuitry to switch between (just swap plugs?)
+
+3d prints
+    sick mechanical keyboard
+        edit for cat5 connection
+        edit for pi and toggle enclosure
+        edit for 6502 housing
+    sick pad
+    pi case (with spots for 2 toggle switches)
+    key caps
+    housing for 6502 related stuff
+
+
+need to purchase:
+    keys
+        key switches
+        diodes
+    power circuit
+        capacitor
+        transistor
+    microprocessor
+        6502
+        ram chip
+        data send chip
+        logic gate chips?
