@@ -5,7 +5,7 @@ main
 
     pi zero w runs python to send keypresses off to either bluetooth or local based on Toggle
 
-    pi zero interfaces with ram to reprogram 6502
+    pi zero interfaces with eeprom programmer to reprogram rom chip
 
 ------------------------------
 

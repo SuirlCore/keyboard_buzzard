@@ -1,0 +1,5 @@
+eaters 6502 computer
+https://eater.net/6502/
+
+github repo for eeprom programmer
+https://github.com/beneater/eeprom-programmer

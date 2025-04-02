@@ -85,7 +85,7 @@ Pin	Name	Description
 
 
 
-
+Rom
 AT28C256 Pinout Table
 Pin	Name	Description
 1	A14	Address Input
@@ -121,7 +121,7 @@ Pin	Name	Description
 
 
 
-
+VIA
 W65C22 Pinout (40-Pin DIP)
 Pinout Table
 Pin	Name	Description
@@ -136,7 +136,7 @@ Pin	Name	Description
 9	PB7	    Port B Bit 7 (I/O)
 10	PB0	    Port B Bit 0 (I/O)
 11	PB1	    Port B Bit 1 (I/O)
-12	PB2	     B Bit 2 (I/O)
+12	PB2	    Port B Bit 2 (I/O)
 13	PB3 	Port B Bit 3 (I/O)
 14	PB4	    Port B Bit 4 (I/O)
 15	PB5	    Port B Bit 5 (I/O)
@@ -169,7 +169,7 @@ Pin	Name	Description
 
 
 
-
+SRAM
 62256 32k sram
 Pin	Name	Description
 1	A14	Address Input 14
