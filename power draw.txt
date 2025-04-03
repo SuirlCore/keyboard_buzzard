@@ -1,0 +1,12 @@
+Power Consumption per Component
+Component	Current Draw (mA)
+W65C02 (CMOS) @ 1-8 MHz	~1–10 mA
+W65C22 VIA	~5–10 mA
+62256 SRAM (32KB)	~30 mA
+AT28C256 EEPROM (32KB)	~30 mA
+Glue Logic (Address Decoder, Buffers, etc.)	~20 mA
+Raspberry Pi Zero W (Idle)	100 mA
+Raspberry Pi Zero W (Active, Wi-Fi on)	120–160 mA
+Total Estimated Draw (Idle Pi)	~195 mA (~0.2A)
+
+Total Estimated Draw (Active Pi with Wi-Fi)	~255–300 mA (~0.3A)
