@@ -220,3 +220,31 @@ Pin	Name	Description
 12	4A	Input of NAND Gate 4
 13	4B	Input of NAND Gate 4
 14	VCC	Power Supply (+5V)
+
+
+
+
+
+
+TXB0108 Logic Level Shifter Pinout (Bi-Directional, 8 Channels)
+Pin #	Name	Description
+1	VCCA	Lower voltage supply (e.g., 3.3V for Raspberry Pi)
+2	A1	Data I/O on low voltage side (3.3V logic)
+3	A2	Data I/O on low voltage side (3.3V logic)
+4	A3	Data I/O on low voltage side (3.3V logic)
+5	A4	Data I/O on low voltage side (3.3V logic)
+6	A5	Data I/O on low voltage side (3.3V logic)
+7	A6	Data I/O on low voltage side (3.3V logic)
+8	A7	Data I/O on low voltage side (3.3V logic)
+9	A8	Data I/O on low voltage side (3.3V logic)
+10	GND	Ground
+11	OE	Output Enable (Active HIGH, connect to 3.3V to enable shifting)
+12	B8	Data I/O on high voltage side (5V logic)
+13	B7	Data I/O on high voltage side (5V logic)
+14	B6	Data I/O on high voltage side (5V logic)
+15	B5	Data I/O on high voltage side (5V logic)
+16	B4	Data I/O on high voltage side (5V logic)
+17	B3	Data I/O on high voltage side (5V logic)
+18	B2	Data I/O on high voltage side (5V logic)
+19	B1	Data I/O on high voltage side (5V logic)
+20	VCCB	Higher voltage supply (e.g., 5V for 6502 system)
