@@ -3,3 +3,6 @@ https://eater.net/6502/
 
 github repo for eeprom programmer
 https://github.com/beneater/eeprom-programmer
+
+another 6502 computer, with basic
+https://github.com/mike42/6502-computer
