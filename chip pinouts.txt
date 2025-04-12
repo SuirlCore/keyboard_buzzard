@@ -185,7 +185,7 @@ Pin	Name	Description
 11	I/O0	Data Input/Output Bit 0
 12	I/O1	Data Input/Output Bit 1
 13	I/O2	Data Input/Output Bit 2
-14	VSS	Ground
+14	VSS	    Ground
 15	I/O3	Data Input/Output Bit 3
 16	I/O4	Data Input/Output Bit 4
 17	I/O5	Data Input/Output Bit 5
@@ -248,3 +248,68 @@ Pin #	Name	Description
 18	B2	Data I/O on high voltage side (5V logic)
 19	B1	Data I/O on high voltage side (5V logic)
 20	VCCB	Higher voltage supply (e.g., 5V for 6502 system)
+
+
+
+
+
+74HC4053 (Triple 2-channel analog multiplexer/demultiplexer)
+Pin	Name	Function
+1	INH (Inhibit)	Disable all switches if HIGH
+2	B (Select B)	Select input for Channel B
+3	X	Common input/output for Channel X
+4	XA	First input/output for Channel X
+5	YA	First input/output for Channel Y
+6	ZA	First input/output for Channel Z
+7	GND	Ground (0V)
+8	A (Select A)	Select input for Channel A
+9	CB	Second input/output for Channel Y
+10	C (Select C)	Select input for Channel C
+11	ZB	Second input/output for Channel Z
+12	YB	Second input/output for Channel Y
+13	XB	Second input/output for Channel X
+14	Y	Common input/output for Channel Y
+15	Z	Common input/output for Channel Z
+16	Vcc	Positive Supply Voltage (+5V typically)
+
+
+
+
+
+74HC595 (Serial-In, Parallel-Out Shift Register)
+    1 Q1 – Output 1
+    2 Q2 – Output 2
+    3 Q3 – Output 3
+    4 Q4 – Output 4
+    5 Q5 – Output 5
+    6 Q6 – Output 6
+    7 Q7 – Output 7
+    8 GND – Ground
+    9 Q7' – Serial out (for chaining to next 595)
+    10 10SRCLR – Shift register clear (active LOW)
+    11 SRCLK – Shift register clock (shifts data on rising edge)
+    12 RCLK – Latch clock (moves shift reg to output pins)
+    13 OE – Output enable (active LOW, tie to GND to always enable)
+    14 DS – Serial data input
+    15 Q0 – Output 0
+    16 Vcc – Power (typically +5V or +3.3V)
+
+
+
+74HC165 (Parallel-In, Serial-Out Shift Register)
+    1 QH' – Complementary serial output (rarely used)
+    2 CLK – Clock (shifts out data on rising edge)
+    3 CLK INH – Clock inhibit (active HIGH, tie LOW normally)
+    4 SH/LD – Shift/Load control (LOW = load parallel inputs, HIGH = shift mode)
+    5 E – Parallel input bit 4
+    6 D – Parallel input bit 3
+    7 F – Parallel input bit 5
+    8 GND – Ground
+    9 H – Parallel input bit 7
+    10 G – Parallel input bit 6
+    11 C – Parallel input bit 2
+    12 B – Parallel input bit 1
+    13 A – Parallel input bit 0
+    14 SER – Serial data input (for chaining multiple 165s)
+    15 QH – Serial output
+    16 Vcc – Power (typically +5V or +3.3V)
