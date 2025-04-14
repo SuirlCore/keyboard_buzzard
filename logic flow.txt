@@ -1,58 +1,36 @@
 main
-    key matrix connected to 6502
-
-    6502 scans matrix and sends off to pi zero w
+    key matrix connected to pi gpio through shift registers
 
     pi zero w runs python to send keypresses off to either bluetooth or local based on Toggle
 
-    pi zero interfaces with eeprom programmer to reprogram rom chip
+    pi zero connected to 6502 through via chip
+        register a sends keypress output from pi to 6502
+        register b sends ascii text info from 6502 to pi
+    
+    python program on pi acts as a telnet window to talk to 6502
 
-------------------------------
+    python program on pi (service) listens to power circuit and sends shutdown signal to safely shutdown if toggle is turned off
 
+    python program on pi to reprogram eeprom as needed (need to build an eeprom programming circuit, outside this system)
 
+    python program on pi to switch 6502's sd card to pi to reprogram it
 
-key matrix:
-    6x12 (keyboard) + 6x4 (10 key)
-
-6502
-    ram chip for programming
-    rom chip for base firmware?
-    chip to send data to pi?
-    timer circuit
-    reset switches
-
-pi zero w
-    power off circuit
-        toggle sends shutdown command to pi
-        toggle cuts main power, capacitor keeps power to pi for 10 seconds
-    interface to control ram chip and reprogram
-    interface for 8x gipo pins to send out to breadboard (cat5 connector on the outside of keyboard)
+    pi gpio breaks out 8 pins onto cat5 connectors to easily connect up to breadboards for future trickery
 
 
-power source
-    either usb wall ac, or usb battery
-    circuitry to switch between (just swap plugs?)
-
-3d prints
-    sick mechanical keyboard
-        edit for cat5 connection
-        edit for pi and toggle enclosure
-        edit for 6502 housing
-    sick pad
-    pi case (with spots for 2 toggle switches)
-    key caps
-    housing for 6502 related stuff
 
 
-need to purchase:
-    keys
-        key switches
-        diodes
-    power circuit
-        capacitor
-        transistor
-    microprocessor
-        6502
-        ram chip
-        data send chip
-        logic gate chips?
+
+    6502 connected to sd card through a via chip
+
+    rom acts as boot loader to load os from sd card in chunks onto ram chip. easier to reprogram sd card
+
+    assembly program on rom:
+        enable sd card
+        ask user if they want msbasic or sd card
+            find first chunk of os from sd card and load to ram
+            pass the torch on to sd card for instructions
+    
+    msbasic loaded onto rom
+
+    6502 data buss and address buss broken out onto cat5 connectors to easily connect up to breadboards for future trickery
