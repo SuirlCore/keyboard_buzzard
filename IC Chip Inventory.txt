@@ -1,38 +1,36 @@
 Name            qty         Desc
 
+741cn           x1          Analog Op Amp
+
 mc1408p8        x1          DAC
 ADC0804LCN      x1          ADC
-741cn           x1          Op Amp
-
 sn754410ne      x5          Quad half h driver
-
 sn74ls148n      x1          8-to-3 priority encoder
+sm74ls138n      x1          3-to-8 line decoder/demultiplexer
+dm74ls139n      x1          dual 2-to-4 line decoder/demultiplexer
 dm74ls153n      x1          dual 4-input multiplexer
 dm74ls193n      x1          4-bit synchronous up/down binary counter
-sm74ls138n      x1          3-to-8 line decoder/demultiplexer
-sn74ls00n       x2          quad 2-input NAND gate
 sn74ls04n       x3          hex inverting buffer
-sn74ls02n       x1          quad 2-input NOR gate
 ka556           x1          dual timer IC
-sn74ls08n       x1          quad 2-input AND gate
 sn74ls47n       x1          BCD to 7-segment decoder/driver
-
-dm74ls139n      x1          dual 2-to-4 line decoder/demultiplexer
-
-74ls86pc        x1          quad 2-input XOR gate
+dm7445n         x1          BCD to 7-segment latch/decoder driver, latch enable
 sn74ls76an      x2          dual JK flip-flop
-dm74ls32n       x1          quad 2-input OR gate
-sn74ls27n       x1          quad 2-input NAND gate
-dm74ls11n       x1          triple 3-input AND gate
-dm74ls10n       x1          triple 3-input NAND gate
-dm74ls01n       x1          quad 2-input NAND gate
-
 ucy74121        x1          monostable multivibrator 
-dm7445n         x1          BCD to 7-segment latch/decoder driver
 sn74hc595n      x1          8-bit shift register, serial data input
 
 
-w65c02s6tpg-14
-w65c22s6tpg-14  x2
-hm62256lp-70
-am27c256-150dc
+dm74ls01n       x1          Quad 2-Input NAND Gate with Open-Collector Outputs
+sn74ls00n       x2          quad 2-input NAND gate
+sn74ls08n       x1          quad 2-input AND gate
+sn74ls02n       x1          quad 2-input NOR gate
+dm74ls32n       x1          quad 2-input OR gate
+74ls86pc        x1          quad 2-input XOR gate
+dm74ls11n       x1          triple 3-input AND gate
+dm74ls10n       x1          triple 3-input NAND gate
+sn74ls27n       x1          Triple 3-Input NOR Gate
+
+
+w65c02s6tpg-14  x1          Microprocessor
+w65c22s6tpg-14  x2          VIA
+hm62256lp-70    x1          RAM
+am27c256-150dc  x1          EPROM
