@@ -34,3 +34,5 @@ w65c02s6tpg-14  x1          Microprocessor
 w65c22s6tpg-14  x2          VIA
 hm62256lp-70    x1          RAM
 am27c256-150dc  x1          EPROM
+
+epm7128slc84    x1          altera max CPLD (Complex Programmable Logic Device)
