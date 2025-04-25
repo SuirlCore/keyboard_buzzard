@@ -1,0 +1,18 @@
+.segment "CODE"
+.org $0600
+
+reset:
+    SEI
+    CLD
+    JMP main
+
+nmi:
+    RTI
+
+irq:
+    RTI
+
+main:
+    LDA #$42
+    STA $6000
+    JMP main
