@@ -1,1 +1,8 @@
 bus addresses
+
+$0000 – $7FFF	32KB	RAM (62256)
+$8000 – $9FFF	8KB	Unmapped (reserved) or I/O window
+$A000 – $A00F	16 bytes	VIA1 (SD card interface)
+$A010 – $A01F	16 bytes	VIA2 (Pi interface)
+$A020 – $BFFF	~8KB	Unused or future I/O space
+$C000 – $FFFF	16KB	EEPROM (AT28C256)
