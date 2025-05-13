@@ -16,8 +16,9 @@ sn74ls47n       x1          BCD to 7-segment decoder/driver
 dm7445n         x1          BCD to 7-segment latch/decoder driver, latch enable
 sn74ls76an      x2          dual JK flip-flop
 ucy74121        x1          monostable multivibrator 
-sn74hc595n      x11          8-bit shift register, serial data input
-sn74HC165       x10          8-bit shift register, Parallel-in  
+sn74hc595n      x11         8-bit shift register, serial data input
+sn74HC165       x10         8-bit shift register, Parallel-in
+74ls157         x15         quad 2-to-1 multiplexer  
 
 
 dm74ls01n       x1          Quad 2-Input NAND Gate with Open-Collector Outputs
