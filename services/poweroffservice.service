@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitors GPIO 17 for poweroff signal
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/suirl/keyboard/keyboard_buzzard/pythonPrograms/poweroff.py
+WorkingDirectory=/home/suirl/keyboard_buzzard/pythonPrograms
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
