@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitors keyboard for keypresses
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/suirl/keyboard/keyboard_buzzard/pythonPrograms/keyboard.py
+WorkingDirectory=/home/suirl/keyboard_buzzard/pythonPrograms
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
